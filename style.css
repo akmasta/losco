@@ -54,11 +54,14 @@ button {
     padding: 10px;
 }
 
-img {
-    max-width: 300px;
-    max-height: 300px;
+img, .opac {
+    max-width: 250px;
+    max-height: 250px;
+    opacity: 0.5;
+}
+
+.opac {
     border-radius: 300px;
-    opacity: 0.8;
 }
 
 h1 {
@@ -77,14 +80,40 @@ p, li {
     padding: 25px;
 }
 
-.quote-section {
-    background:#E5E7EB;
+h3 {
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
 }
 
-.quote {
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+
+.quote-section {
+    background:#E5E7EB;
+    display: flex;
+    flex-direction: column;
+}
+
+.quote, .author {
     color: #1F2937;
     font-size: 36px;
     font-weight: lighter;
     font-style: italic;
-    padding: 20px;
+    padding-top: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.author {
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: right;
+    padding-top: 0;
 }
