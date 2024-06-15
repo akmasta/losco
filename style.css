@@ -5,15 +5,18 @@ body {
 
 .header, .hero {
     background-color: #1F2937;
-    color: white;
     padding: 10px;
     display: flex;
+}
+
+h2 {
+    color: white;
 }
 
 .logo {
     display: flex;
     justify-content: flex-start;
-    padding-left: 28px;
+    padding-left: 50px;
     align-items: center;
     font-size: 25px;
 }
@@ -22,6 +25,7 @@ body {
     display: flex;
     justify-content: flex-end;
     margin-left: auto;
+    margin-right: 50px;
     padding: 8px;
     align-items: center;
     font-weight: 700;
@@ -35,6 +39,7 @@ ul {
 
 .hero {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 25px;
@@ -42,7 +47,7 @@ ul {
 }
 
 .left {
-    max-width: 500px;
+    max-width: 450px;
 }
 
 button {
@@ -51,16 +56,18 @@ button {
     border-radius: 50px;
     border: none;
     font-size: 18px;
-    padding: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
 }
 
 img, .opac {
     max-width: 250px;
     max-height: 250px;
-    opacity: 0.5;
+    border-radius: 60px;
 }
 
 .opac {
+    opacity: 0.5;
     border-radius: 300px;
 }
 
@@ -80,18 +87,28 @@ p, li {
     padding: 25px;
 }
 
-h3 {
+h3, .cards {
     color: #1F2937;
     font-size: 36px;
     font-weight: 900;
     display: flex;
     justify-content: center;
+    margin: 50px;
 }
 
 .cards {
     display: flex;
     justify-content: center;
     gap: 70px;
+    flex-wrap: wrap;
+}
+
+.setcard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #1F2937;
 }
 
 .quote-section {
@@ -110,10 +127,41 @@ h3 {
     padding-right: 150px;
 }
 
+.quote-content {
+    margin: 100px;
+}
+
+.quote {
+    display: flex;
+    justify-content: center;
+}
+
 .author {
     font-style: normal;
     font-size: 20px;
     font-weight: 700;
     text-align: right;
     padding-top: 0;
+}
+
+.blue-poster {
+    background: #3882F6;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    padding: 20px;
+    margin: 100px;
+}
+
+.button2 {
+    border-style: solid;
+    border-color:#E5E7EB;
+    margin-left: 50px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
 }
